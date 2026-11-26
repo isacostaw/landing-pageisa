@@ -1,0 +1,449 @@
+
+/* ==================================================
+   ETAPA 01 - RESET CSS
+   ================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   ETAPA 02 - CONFIGURAÇÕES GLOBAIS
+   ================================================== */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F9FAFB;
+  color: #111827;
+}
+
+
+/* ==================================================
+   ETAPA 03 - BARRA DE NAVEGAÇÃO
+   ================================================== */
+
+.navbar {
+  background-color: #4F46E5;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ==================================================
+   ETAPA 04 - LOGOTIPO E LINKS DE NAVEGAÇÃO
+   ================================================== */
+
+/* Logotipo */
+.logo {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Lista de navegação */
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Links */
+.navlinks a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.navlinks a:hover {
+  color: #E0E7FF;
+}
+
+
+/* ==================================================
+   ETAPA 06 - SEÇÃO PRINCIPAL (HERO)
+   ================================================== */
+
+/* Estrutura da seção */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #F9FAFB;
+}
+
+/* Área de texto */
+.hero-texto {
+  /*flex: 1;*/
+  max-width: 500px;
+}
+
+/* Título principal */
+.hero-texto h1 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+/* Parágrafo */
+.hero-texto p {
+  font-size: 1.125rem;
+  color: #6B7280;
+  margin-bottom: 2rem;
+}
+
+/* Área da imagem */
+.hero-imagem {
+  /*flex: 1;*/ /* Permite que a imagem ocupe o espaço restante */
+  text-align: center;
+}
+
+/* Imagem responsiva */
+.hero-imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ==================================================
+   ETAPA 07 - BOTÃO DE CHAMADA PARA AÇÃO (CTA)
+   ================================================== */
+
+/* Estilo do botão */
+.btn-cta {
+  background-color: #4F46E5;
+  color: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.btn-cta:hover {
+  background-color: #4338CA;
+}
+
+
+/* ==================================================
+   ETAPA 08 - SEÇÃO DE CONTEÚDO E CARDS
+   ================================================== */
+
+/* Estrutura da seção */
+.conteudo {
+  padding: 4rem 2rem;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/* Título da seção */
+.conteudo h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+/* Container dos cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Estilo individual dos cards */
+.card {
+  background-color: #F3F4F6;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Título do card */
+.card h3 {
+  color: #4F46E5;
+  margin-bottom: 1rem;
+}
+
+/* Texto do card */
+.card p {
+  color: #6B7280;
+}
+.depoimentos {
+    padding: 80px 10%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.depoimentos h2 {
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 60px;
+}
+
+.depoimentos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.depoimento {
+    background-color: white;
+    padding: 45px 30px;
+    border-radius: 25px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.depoimento p {
+    font-size: 1.2rem;
+    color: #374151;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.depoimento span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+.exemplos {
+  padding: 4rem 2rem;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/* Título */
+.exemplos h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* Descrição */
+.exemplos-descricao {
+  color: #6B7280;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+/* Container dos exemplos */
+.exemplos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Card de exemplo */
+.exemplo-card {
+  background-color: #F3F4F6;
+  border-radius: 1rem;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites do card */
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.exemplo-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagem do exemplo */
+.exemplo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Título do card */
+.exemplo-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 1rem 0.5rem;
+  color: #4F46E5;
+}
+
+/* Descrição do card */
+.exemplo-card p {
+  color: #4B5563;
+  margin: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.menu-toggle .bar{
+  width: 100%;
+  height: 3px;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  transition: transform 0.3s ease,opcity 0.3s ease;
+
+}
+@media(max-width:768px){
+  .menu-toggle{
+    display: flex;
+  }
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .navlinks{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #4F46E5;
+    padding: 1rem 2rem ;
+    display: none;
+    animation: slideDown 0.3s ease forwards;
+  }
+  .navlinks.show{
+    display: flex;
+    
+  }
+  @keyframes slideDown{
+    from{
+      opacity:0;
+      transform: translateY(-10px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    
+  }
+  .menu-toggle.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+
+  }
+  .menu-toggle.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .menu-toggle.active .bar:nth-child(3){
+    transform: translateY(-8px)rotate(-45deg);
+  }
+
+}
+.tutorial {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tutorial h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tutorial > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.passos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.passo {
+    background-color: #f0f7ff;
+    border: 2px solid #cce4ff;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.10);
+}
+
+.passo h3 {
+    background-color: #007bff;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    grid-row: span 2;
+}
+
+.passo h2 {
+    color: #0056b3;
+    font-size: 1.3rem;
+    margin: 0;
+    text-align: left;
+}
+
+.passo p {
+    color: #444;
+    margin-top: 8px;
+    margin-bottom: 0;
+    grid-column: 2;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .passo {
+        padding: 15px;
+        grid-template-columns: 50px 1fr;
+    }
+
+    .passo h3 {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .passo h2 {
+        font-size: 1.1rem;
+    }
+
+    .passo p {
+        font-size: 0.9rem;
+    }
+}

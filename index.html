@@ -9,6 +9,11 @@
 <body>
     <nav class="navbar">
         <div class="logo">SENAI</div>
+        <button class="menu-toggle" aria-label=""Abrir menu>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
             <ul class="navlinks">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Conteúdo</a></li>
@@ -31,7 +36,7 @@
             </div>
         </section>
         <section class="conteudo">
-            <h2>O que voê vai aprender </h2>
+            <h2>O que você vai aprender </h2>
             <div class="cards">
             <div class="card">
                 <h3>HTML</h3>
@@ -49,6 +54,97 @@
             </div>
 
         </section>
+        <section class="depoimentos">
+    <h2>O que dizem nossos alunos</h2>
+    <div class="depoimentos-grid">
+        <div class="depoimento">
+            <img src="assets/aluno1 (1).jpg" alt="Foto do aluno João">
+            <p>"Aprender frontend ficou muito mais fácil com esse projeto. Agora consigo criar minhas próprias páginas!"</p>
+            <span>João Pereira</span>
+        </div>
+
+        <div class="depoimento">
+            <img src="assets/aluno2.jpg" alt="Foto da aluna Maria">
+            <p>"As explicações são diretas e os exemplos me ajudaram a entender o que eu achava impossível."</p>
+            <span>Maria Oliveira</span>
+        </div>
+
+        <div class="depoimento">
+            <img src="assets/aluno3.png" alt="Foto da aluna Ana">
+            <p>"O projeto me deu confiança para montar meu portfólio e participar de processos seletivos."</p>
+            <span>Ana Costa</span>
+        </div>
+    </div>
+</section><s></s>
+<section class="exemplos">
+    <h2>Exemplos Práticos</h2>
+    <p class="exemplos-descricao">Veja alguns projetos criados com os conceitos aprendidos nas aulas.</p>
+    <div class="exemplos-grid">
+        <div class="exemplo-card">
+            <img src="assets/exemplo1.jpg" alt="Exemplo de página HTML">
+            <h3>Portfólio Pessoal</h3>
+            <p>Site de apresentação com HTML semântico e estilização com CSS moderno.</p>
+        </div>
+
+        <div class="exemplo-card">
+            <img src="assets/exemplo2.jpg" alt="Exemplo de cardápio digital">
+            <h3>Cardápio Digital</h3>
+            <p>Projeto interativo com botões e imagens simulando um site de lanchonete.</p>
+        </div>
+
+        <div class="exemplo-card">
+            <img src="assets/exemplo3.jpg" alt="Exemplo de conversor de moedas">
+            <h3>Conversor de Moedas</h3>
+            <p>Pequena aplicação com JavaScript para calcular conversões em tempo real.</p>
+        </div>
+    </div>
+</section>
+
+<section class="tutorial">
+    <h2>Como Funciona o Aprendizado</h2>
+    <p>Veja o passo que você vai seguir para dominar o desenvolvimento de FrontEnd
+    </p>
+    <div class="passos">
+       
+        <div class="passo">
+            <h3>1</h3> <h2>Fundamentos de HTML</h2>
+
+            <p>Aprenda a estruturar páginas com semântica,acessibilidade e boas práticas </p>
+        </div>
+        <div class="passo">
+            <h3>2</h3>
+            <h2>Estilização com CSS</h2>
+            <p>Crie layouts modernos com cores, fontes,espacamentos e responsividade </p>
+        </div>
+        <div class="passo">
+            <h3>3</h3>
+            <h2>Interatividade com JavaScript </h2>
+            <p>Adicione vida á sua pagina com eventos,manipulação de DOM e lógica de programação.</p>
+
+        </div>
+         <div class="passo">
+            <h3>4</h3>
+            <h2>Projeto Final</h2>
+            <p>Coloque tudo em prática desenvolvendo um site completo e visualmente atrativo </p>
+
+        </div>
+
+    </div>
+
+</section>
+        
+
+       
     </main>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".navlinks");
+        toggle.addEventListener("click",() => {
+            toggle.classList.toggle("active");
+            navLinks.classList.toggle("show");
+        });
+
+        
+    </script>
 </body>
 </html>
