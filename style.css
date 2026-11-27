@@ -368,7 +368,7 @@ body {
 }
 
 .tutorial h2 {
-    color: #007bff;
+    color: #111827;
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -387,15 +387,14 @@ body {
 }
 
 .passo {
-    background-color: #f0f7ff;
-    border: 2px solid #cce4ff;
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
     display: grid;
     grid-template-columns: 60px 1fr;
     align-items: center;
     text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.10);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .passo h3 {
@@ -446,4 +445,38 @@ body {
     .passo p {
         font-size: 0.9rem;
     }
-}
+
+    .hero{
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-texto{
+      max-width: 100%;
+    }
+    .hero-imagem{
+      margin-top: 2rem;
+    }
+    .cards{
+      flex-direction: column;
+      align-items: center;
+    }
+    .card{
+      max-width: 100%;
+      align-items: center;
+    }
+    .depoimentos-grid{
+      flex-direction: column;
+      align-items: center;
+    }
+    .depoimento{
+      max-width: 90%;
+
+    }
+    .exemplo-card{
+      max-width: 90%;
+    }
+    .exemplos-grid{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
